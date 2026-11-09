@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Calculadora">
+    <p class="valorAnterior valores">valorAnterior</p>
+    <p class="valorInicial valores">valorInicial</p>
+    <button class="clear operadores" onclick="limpiar()">C</button>
+    <button class="numeroUno numeros" data-numero="1" onclick="agregarNumero(event)">1</button>
+    <button class="numeroDos numeros" data-numero="2" onclick="agregarNumero(event)">2</button>
+    <button class="numeroTres numeros" data-numero="3" onclick="agregarNumero(event)">3</button>
+    <button class="numeroCuatro numeros" data-numero="4" onclick="agregarNumero(event)">4</button>
+    <button class="numeroCinco numeros" data-numero="5" onclick="agregarNumero(event)">5</button>
+    <button class="numeroSeis numeros" data-numero="6" onclick="agregarNumero(event)">6</button>
+    <button class="numeroSiete numeros" data-numero="7" onclick="agregarNumero(event)">7</button>
+    <button class="numeroOcho numeros" data-numero="8" onclick="agregarNumero(event)">8</button>
+    <button class="numeroNueve numeros" data-numero="9" onclick="agregarNumero(event)">9</button>
+    <button class="suma operadores" onclick="sumar()">+</button>
+    <button class="resta operadores" onclick="restar()">-</button>
+    <button class="multiplicacion operadores" onclick="multiplicar()">X</button>
+    <button class="divison operadores" onclick="dividir()">/</button>
+    <button class="igual operadores" onclick="total()">=</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

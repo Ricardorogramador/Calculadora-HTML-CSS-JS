@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: rgba(5, 5, 5, 0.925);
+}
+
+.Calculadora{
+  max-width: 940px;
+  margin: 0 auto;
+}
+.Calculadora > div{
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: black;
+  padding: 1em;
+}
+
+.Calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+.valorInicial{
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.valorAnterior{
+  grid-column: 4/4;
+  grid-row: 1;
+}
+
+.clear{
+  grid-column: 1/4;
+  grid-row: 2;
+}
+
+.suma {
+  grid-column: 4/4;
+  grid-row: 2;
+}
+
+.numeroUno {
+  grid-column: 1/2;
+  grid-row: 3;
+}
+
+.numeroTres {
+  grid-column: 3/4;
+  grid-row: 3;
+}
+.resta {
+  grid-column: 4/4;
+  grid-row: 3;
+}
+
+.multiplicacion{
+  grid-column: 4/4;
+  grid-row: 4;
+}
+.igual{
+  grid-column: 1/5;
+  grid-row: 6;
+}
+
+.operadores{
+  color: white;
+  background-color: rgb(226, 149, 7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.numeros{
+  color: white;
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.valores{
+  color: white;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
